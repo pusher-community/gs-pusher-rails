@@ -1,0 +1,7 @@
+{
+  "name": "Pusher and Rails example app",
+  "description": "A barebones Pusher and Rails 4 app",
+  "repository": "https://github.com/pusher-community/gs-pusher-rails",
+  "logo": "https://raw.githubusercontent.com/pusher-community/gs-pusher-rails/master/docs/pusher_logo_p_dark.png",
+  "keywords": ["pusher", "rails", "real-time", "realtime", "websockets"]
+}
