@@ -4,7 +4,7 @@ class TriggerController < ApplicationController
   end
 
   def create
-    message = request.params["message"]
+    message = params["message"]
 
     # TODO: implement checks to determine if the user is:
     # 1. Authenticated with the app

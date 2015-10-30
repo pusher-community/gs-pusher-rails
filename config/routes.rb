@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
+
+  root 'home#index'
+
   get 'trigger', to: 'trigger#index'
   post 'trigger', to: 'trigger#create'
+
+  get 'presence', to: 'presence#index'
+  post 'presence_auth', to: 'presence#auth'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

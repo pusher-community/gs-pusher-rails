@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GsPusherRails</title>
+  <title>Getting started with Pusher and Rails</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <script src="//js.pusher.com/3.0/pusher.min.js"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <ul>
+    <li><a href="/trigger">Trigger an Event</a></li>
+    <li><a href="/private">Private Channel Code Sample</a></li>
+    <li><a href="/presence">Presence Channel Code Sample</a></li>
+  </ul>
 
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
