@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get 'presence', to: 'presence#index'
   post 'presence_auth', to: 'presence#auth'
 
+  get 'private', to: 'private#index'
+  post 'private_auth', to: 'private#auth'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
