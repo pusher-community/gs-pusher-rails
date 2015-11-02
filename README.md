@@ -26,7 +26,7 @@ $ bundle install
 
 ## Run the examples
 
-Prior to running the Node app you'll need some environmental variables to be set.
+Prior to running the Rails app you'll need some environmental variables to be set.
 
 * `PUSHER_CHAT_APP_ID` - your Pusher application ID
 * `PUSHER_CHAT_APP_KEY` - your Pusher application key
@@ -38,7 +38,7 @@ You can do this from the command line as part of running the application:
 PUSHER_CHAT_APP_ID=YOUR_APP_ID PUSHER_CHAT_APP_KEY=YOUR_APP_KEY PUSHER_CHAT_APP_SECRET=YOUR_APP_SECRET rails s
 ```
 
-Or, probably much more easily, with the help of [dotenv-rails](https://github.com/bkeepers/dotenv) and by setting these values in a `.env` file:
+Or, probably much more easily, with the help of [foreman](https://github.com/ddollar/foreman) and by setting these values in a `.env` file:
 
 ```
 PUSHER_CHAT_APP_ID=YOUR_APP_ID
@@ -46,7 +46,13 @@ PUSHER_CHAT_APP_KEY=YOUR_APP_KEY
 PUSHER_CHAT_APP_SECRET=YOUR_APP_SECRET
 ```
 
-Dotenv will load those values automatically when you start the Rails app.
+Then run:
+
+```
+PORT=3000 foreman start
+```
+
+Foreman will load those values automatically when you start the Rails app.
 
 Navigate to `localhost:3000` (or the URL you see logged to the console) and take a look at the examples. View the JavaScript console for a log from the Pusher JavaScript library.
 
