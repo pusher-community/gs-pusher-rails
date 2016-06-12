@@ -35,7 +35,15 @@ Prior to running the Rails app you'll need some environmental variables to be se
 You can do this from the command line as part of running the application:
 
 ```bash
+# Bash (OS X and Linux)
 PUSHER_CHAT_APP_ID=YOUR_APP_ID PUSHER_CHAT_APP_KEY=YOUR_APP_KEY PUSHER_CHAT_APP_SECRET=YOUR_APP_SECRET rails s
+
+# Windows command prompt:
+set PUSHER_CHAT_APP_ID=YOUR_APP_ID&& set PUSHER_CHAT_APP_KEY=YOUR_APP_KEY&& set PUSHER_CHAT_APP_SECRET=YOUR_APP_SECRET&& rails s
+
+# Windows PowerShell:
+$env:PUSHER_CHAT_APP_ID="YOUR_APP_ID"; $env:PUSHER_CHAT_APP_KEY="YOUR_APP_KEY"; $env:PUSHER_CHAT_APP_SECRET="YOUR_APP_SECRET"; rails s
+ 
 ```
 
 Or, probably much more easily, with the help of [foreman](https://github.com/ddollar/foreman) and by setting these values in a `.env` file:
